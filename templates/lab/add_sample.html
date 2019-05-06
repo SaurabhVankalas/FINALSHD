@@ -1,0 +1,42 @@
+{% extends "Frame/framepage.html" %}
+{% block content %}
+
+
+<div class="col12">
+  <div id="content">
+    <div class="titlebox">Add Sample Test</div>
+     <br>
+     <form action="Insertnewsample" method="POST">
+     
+      <div class="row myrow">
+        <div class="col-6">
+        <span class="texttule">Enter Test Details:</span>
+        <input type="text" name="test_type" id="test_type" placeholder="Test Type" required>
+        <input type="text" name="test_name" id="test_name" placeholder="Test Name" required>
+        <input type="text" name="Male_Range" id="Male_Range" placeholder="Male Range" required>
+        <input type="text" name="Female_Range" id="Female_Range" placeholder="Female Range" required>
+        <input type="text" name="Unit" id="Unit" placeholder="Unit" required>
+      </div>
+
+        
+      <br>
+      <div class="row myrow">
+        <div class="col-5"></div>
+        <div class="col-3">
+          <input type="submit" class="button" id='btnsave' value="SAVE" style="height:40px;width:150px;">
+        </div>
+      </div>
+      <br>
+      <div class="row myrow"><div class="col-3"><p>{{ack}}</p></div></div>
+    </form>
+  </div> <!--- Content --->
+</div><!--- col-12 --->
+
+
+
+
+
+
+
+
+{% endblock %}
